@@ -1,0 +1,30 @@
+/
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode*slow=head;
+        ListNode*fast=head;
+        while( (fast!=NULL )&&(fast->next!=NULL))
+        {
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        return slow;
+    }
+};
+//for find the fast->next we first need to chcek pleaes that the fast node itself is null or not 
+*/
+class Solution {
+public:
+    ListNode* middleNode(ListNode* head) {
+        ListNode*slow=head;
+        ListNode*fast=head;
+        while( (fast->next->next!=NULL)
+        {
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        return slow;
+    }
+};
+// FOR THE LEFT NODE IN CASE OF LENGTH OF LINKLIST IS EVEN
